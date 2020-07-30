@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "47555026126",
+    "firebase_url": "https://irmao-de-sangue.firebaseio.com",
+    "project_id": "irmao-de-sangue",
+    "storage_bucket": "irmao-de-sangue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47555026126:android:0e521c2dbcadff83",
+        "android_client_info": {
+          "package_name": "com.example.irmaos_de_sangue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47555026126-58saacekt3sekln8fef2mmu20bh2pm8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiuN0g2eCjOsfS5oi7VvxcgEnsF03nWzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47555026126-58saacekt3sekln8fef2mmu20bh2pm8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
