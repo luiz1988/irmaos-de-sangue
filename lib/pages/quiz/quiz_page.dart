@@ -386,7 +386,7 @@ class SplashScreenState extends State<SplashScreen>
                 onTap: () {
                   if (!isNext) {
                     Scaffold.of(context).showSnackBar(SnackBar(
-                      content: Text('Preecha umas das opção acima!'),
+                      content: Text('Preecha umas das opção acima!',style: TextStyle(  fontSize: 20.0, ),),
                     ));
                   } else {
                     curIndex += 1;
@@ -513,9 +513,9 @@ class SplashScreenState extends State<SplashScreen>
               margin: EdgeInsets.only(top: 16.0),
               child: Text('Questão 1',
                   style: TextStyle(
-                      color: Colors.blueGrey,
+                      color: Colors.black,
                       fontWeight: FontWeight.bold,
-                      fontSize: 20.0),
+                      fontSize: 23.0),
                   textAlign: TextAlign.center),
             ),
             Container(
@@ -525,8 +525,8 @@ class SplashScreenState extends State<SplashScreen>
                   style: TextStyle(
                       color: Colors.grey,
                       fontWeight: FontWeight.bold,
-                      fontSize: 15.0),
-                  textAlign: TextAlign.center),
+                      fontSize: 20.0),
+                  textAlign: TextAlign.justify),
             ),
             Expanded(
               child: Center(
@@ -602,20 +602,20 @@ class SplashScreenState extends State<SplashScreen>
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text('Questão 2',
                       style: TextStyle(
-                          color: Colors.blueGrey,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20.0),
+                          fontSize: 23.0),
                       textAlign: TextAlign.center),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text(
-                      'Recentemente nos últimos 7 dias, teve crise de asma ou bronquite leve(crises com intervalo maiores que 3 meses, compensada com medicamentos por via inalatória)?',
+                      'Para fazer a primeira doação de sangue é necessário ter a idade minima de 18 anos, você possui essa idade minima?',
                       style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15.0),
-                      textAlign: TextAlign.center),
+                          fontSize: 20.0),
+                      textAlign: TextAlign.justify),
                 ),
                 Expanded(
                   child: Center(
@@ -693,20 +693,20 @@ class SplashScreenState extends State<SplashScreen>
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text('Questão 3',
                       style: TextStyle(
-                          color: Colors.blueGrey,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20.0),
+                          fontSize: 23.0),
                       textAlign: TextAlign.center),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text(
-                      'Recentemente nos últimos 7 dias, teve crise de asma ou bronquite leve(crises com intervalo maiores que 3 meses, compensada com medicamentos por via inalatória)?',
+                      'Idade máxima para se doar sangue conforme a legislação é entre 60 e 65 anos, voçê esta nessa faixa etária?',
                       style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15.0),
-                      textAlign: TextAlign.center),
+                          fontSize: 20.0),
+                      textAlign: TextAlign.justify),
                 ),
                 Expanded(
                   child: Center(
@@ -784,20 +784,20 @@ class SplashScreenState extends State<SplashScreen>
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text('Questão 4',
                       style: TextStyle(
-                          color: Colors.blueGrey,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20.0),
+                          fontSize: 23.0),
                       textAlign: TextAlign.center),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text(
-                      'Recentemente nos últimos 7 dias, teve crise de asma ou bronquite leve(crises com intervalo maiores que 3 meses, compensada com medicamentos por via inalatória)?',
+                      'Para poder fazer a doação é necessário ter no minimo 50 Kg, você possui um peso igual ou maior ao recomendado?',
                       style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15.0),
-                      textAlign: TextAlign.center),
+                          fontSize: 20.0),
+                      textAlign: TextAlign.justify),
                 ),
                 Expanded(
                   child: Center(
@@ -875,20 +875,20 @@ class SplashScreenState extends State<SplashScreen>
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text('Questão 5',
                       style: TextStyle(
-                          color: Colors.blueGrey,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20.0),
+                          fontSize: 23.0),
                       textAlign: TextAlign.center),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text(
-                      'Recentemente nos últimos 7 dias, teve crise de asma ou bronquite leve(crises com intervalo maiores que 3 meses, compensada com medicamentos por via inalatória)?',
+                      'Você esta com a temperatura axiliar menor ou igual 37° C?',
                       style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15.0),
-                      textAlign: TextAlign.center),
+                          fontSize: 20.0),
+                      textAlign: TextAlign.justify),
                 ),
                 Expanded(
                   child: Center(
@@ -966,20 +966,20 @@ class SplashScreenState extends State<SplashScreen>
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text('Questão 6',
                       style: TextStyle(
-                          color: Colors.blueGrey,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20.0),
+                          fontSize: 23.0),
                       textAlign: TextAlign.center),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text(
-                      'Recentemente nos últimos 7 dias, teve crise de asma ou bronquite leve(crises com intervalo maiores que 3 meses, compensada com medicamentos por via inalatória)?',
+                      'Esta fazendo algum tratamento médico com remédio controlado?',
                       style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15.0),
-                      textAlign: TextAlign.center),
+                          fontSize: 20.0),
+                      textAlign: TextAlign.justify),
                 ),
                 Expanded(
                   child: Center(
@@ -1057,20 +1057,20 @@ class SplashScreenState extends State<SplashScreen>
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text('Questão 7',
                       style: TextStyle(
-                          color: Colors.blueGrey,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20.0),
+                          fontSize: 23.0),
                       textAlign: TextAlign.center),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text(
-                      'Recentemente nos últimos 7 dias, teve crise de asma ou bronquite leve(crises com intervalo maiores que 3 meses, compensada com medicamentos por via inalatória)?',
+                      'Você teve febre, resfriado, dor de garganta ou gripe na última semana?',
                       style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15.0),
-                      textAlign: TextAlign.center),
+                          fontSize: 20.0),
+                      textAlign: TextAlign.justify),
                 ),
                 Expanded(
                   child: Center(
@@ -1148,20 +1148,20 @@ class SplashScreenState extends State<SplashScreen>
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text('Questão 8',
                       style: TextStyle(
-                          color: Colors.blueGrey,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20.0),
+                          fontSize: 23.0),
                       textAlign: TextAlign.center),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text(
-                      'Recentemente nos últimos 7 dias, teve crise de asma ou bronquite leve(crises com intervalo maiores que 3 meses, compensada com medicamentos por via inalatória)?',
+                      'Foi realizado algum tratamento odontológico nos últimos dias?',
                       style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15.0),
-                      textAlign: TextAlign.center),
+                          fontSize: 20.0),
+                      textAlign: TextAlign.justify),
                 ),
                 Expanded(
                   child: Center(
@@ -1239,20 +1239,20 @@ class SplashScreenState extends State<SplashScreen>
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text('Questão 9',
                       style: TextStyle(
-                          color: Colors.blueGrey,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20.0),
+                          fontSize: 23.0),
                       textAlign: TextAlign.center),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 16.0),
                   child: Text(
-                      'Recentemente nos últimos 7 dias, teve crise de asma ou bronquite leve(crises com intervalo maiores que 3 meses, compensada com medicamentos por via inalatória)?',
+                      'Foi realizado algum procedimento de tatuagem, piercing ou acupuntura nos últimos dias?',
                       style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15.0),
-                      textAlign: TextAlign.center),
+                          fontSize: 20.0),
+                      textAlign: TextAlign.justify),
                 ),
                 Expanded(
                   child: Center(
@@ -1348,7 +1348,7 @@ class SplashScreenState extends State<SplashScreen>
                 style: TextStyle(
                     color: Colors.grey,
                     fontWeight: FontWeight.bold,
-                    fontSize: 20.0),
+                    fontSize: 23.0),
                 textAlign: TextAlign.center,
               ),
             ),

@@ -134,10 +134,11 @@ class _RegisterFormState extends State<RegisterForm> {
         builder: (context, state) {
           List<Step> steps = [
             new Step(
-              title: const Text('Seu nome completo*'),
+              title: const Text('Seu nome completo*',style: TextStyle(  fontSize: 17.0, ),),
               isActive: true,
               state: StepState.indexed,
               content: new TextFormField(
+                style:TextStyle(  fontSize: 18.0, ),
                 controller: _nameController,
                 keyboardType: TextInputType.text,
                 autocorrect: true,
@@ -151,14 +152,15 @@ class _RegisterFormState extends State<RegisterForm> {
                     hintText: 'Informe seu nome',
                     icon: const Icon(Icons.person),
                     labelStyle: new TextStyle(
-                        decorationStyle: TextDecorationStyle.solid)),
+                        decorationStyle: TextDecorationStyle.solid,fontSize : 22.0 )),
               ),
             ),
             new Step(
-              title: const Text('Seu e-mail*'),
+              title: const Text('Seu e-mail*',style:TextStyle(  fontSize: 18.0, ),),
               isActive: true,
               state: StepState.indexed,
               content: new TextFormField(
+                 style:TextStyle(  fontSize: 18.0, ),
                 controller: _emailController,
                 keyboardType: TextInputType.emailAddress,
                 autocorrect: true,
@@ -172,14 +174,15 @@ class _RegisterFormState extends State<RegisterForm> {
                     hintText: 'Informe seu e-mail',
                     icon: const Icon(Icons.email),
                     labelStyle: new TextStyle(
-                        decorationStyle: TextDecorationStyle.solid)),
+                        decorationStyle: TextDecorationStyle.solid,fontSize : 22.0)),
               ),
             ),
             new Step(
-              title: const Text('Senha para acesso*'),
+              title: const Text('Senha para acesso*',style:TextStyle(  fontSize: 18.0, )),
               isActive: true,
               state: StepState.indexed,
               content: new TextFormField(
+                style:TextStyle(  fontSize: 18.0, ),
                 controller: _passwordController,
                 keyboardType: TextInputType.visiblePassword,
                 autocorrect: true,
@@ -197,7 +200,7 @@ class _RegisterFormState extends State<RegisterForm> {
               ),
             ),
             new Step(
-                title: Text("Empresa*"),
+                title: Text("Empresa*",style:TextStyle(  fontSize: 18.0, )),
                 content: FormField<String>(
                   validator: (value) {
                     if (value == null) {
@@ -254,10 +257,11 @@ class _RegisterFormState extends State<RegisterForm> {
                 ),
                 isActive: true),
             new Step(
-              title: const Text('Número celular*'),
+              title: const Text('Número celular*',style:TextStyle(  fontSize: 18.0, )),
               isActive: true,
               state: StepState.indexed,
               content: new TextFormField(
+                style:TextStyle(  fontSize: 18.0, ),
                 controller: _phoneNumberController,
                 keyboardType: TextInputType.number,
                 autocorrect: false,
@@ -275,7 +279,7 @@ class _RegisterFormState extends State<RegisterForm> {
               ),
             ),
             new Step(
-                title: Text("Sexo*"),
+                title: Text("Sexo*",style:TextStyle(  fontSize: 18.0, )),
                 content: FormField<String>(
                   validator: (value) {
                     if (value == null) {
@@ -332,10 +336,11 @@ class _RegisterFormState extends State<RegisterForm> {
                 ),
                 isActive: true),
             new Step(
-              title: const Text('Peso*'),
+              title: const Text('Peso*',style:TextStyle(  fontSize: 18.0, )),
               isActive: true,
               state: StepState.indexed,
               content: new TextFormField(
+                style:TextStyle(  fontSize: 18.0, ),
                 controller: _weightController,
                 keyboardType: TextInputType.number,
                 autocorrect: false,
@@ -353,7 +358,7 @@ class _RegisterFormState extends State<RegisterForm> {
               ),
             ),
             new Step(
-                title: Text("Estado civil*"),
+                title: Text("Estado civil*",style:TextStyle(  fontSize: 18.0, )),
                 content: FormField<String>(
                   validator: (value) {
                     if (value == null) {
@@ -410,7 +415,7 @@ class _RegisterFormState extends State<RegisterForm> {
                 ),
                 isActive: true),
             new Step(
-              title: const Text('Data nascimento*'),
+              title: const Text('Data nascimento*',style:TextStyle(  fontSize: 18.0, )),
               isActive: true,
               state: StepState.indexed,
               content: Row(children: <Widget>[
@@ -438,7 +443,7 @@ class _RegisterFormState extends State<RegisterForm> {
               ]),
             ),
             new Step(
-                title: Text("Informe seu tipo Sanguineo*"),
+                title: Text("Informe seu tipo Sanguineo*",style:TextStyle(  fontSize: 18.0, )),
                 content: FormField<String>(
                   validator: (value) {
                     if (value == null) {
@@ -495,7 +500,7 @@ class _RegisterFormState extends State<RegisterForm> {
                 ),
                 isActive: true),
             new Step(
-              title: const Text('Data da última doação'),
+              title: const Text('Data da última doação',style:TextStyle(  fontSize: 18.0, )),
               isActive: true,
               state: StepState.indexed,
               content: Row(children: <Widget>[
@@ -520,7 +525,7 @@ class _RegisterFormState extends State<RegisterForm> {
               ]),
             ),
             new Step(
-                title: Text("Estado onde mora*"),
+                title: Text("Estado onde mora*",style:TextStyle(  fontSize: 18.0, )),
                 content: FormField<String>(
                   validator: (value) {
                     if (value == null) {
@@ -577,7 +582,7 @@ class _RegisterFormState extends State<RegisterForm> {
                 ),
                 isActive: true),
             new Step(
-                title: Text("Cidade onde mora*"),
+                title: Text("Cidade onde mora*",style:TextStyle(  fontSize: 18.0, )),
                 content: FormField<String>(
                   validator: (value) {
                     if (value == null) {
@@ -602,7 +607,7 @@ class _RegisterFormState extends State<RegisterForm> {
                           ),
                           child: DropdownButtonHideUnderline(
                             child: DropdownButton(
-                              hint: new Text("Selecione Cidade"),
+                              hint: new Text("Selecione Cidade",style:TextStyle(  fontSize: 18.0, )),
                               value: selectedCidade,
                               onChanged: (GenericObject newValue) {
                                 state.didChange(newValue.name);
@@ -649,7 +654,7 @@ class _RegisterFormState extends State<RegisterForm> {
                 ),
                 Theme(
                   child: ConstrainedBox(
-                    constraints: BoxConstraints.tightFor(height: 400.0),
+                    constraints: BoxConstraints.tightFor(height: 420.0),
                     child: new Stepper(
                       steps: steps,
                       type: StepperType.vertical,

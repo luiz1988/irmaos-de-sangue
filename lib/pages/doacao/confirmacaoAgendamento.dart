@@ -109,7 +109,7 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
         .document(this.userUid)
         .collection('donations')
         .document(this.idUltimaDoacao)
-        .updateData({'id_protocolo': idProtocol,'is_efetivado': true});
+        .updateData({'id_protocolo': idProtocol,'is_efetivado': true, 'urlImage':'https://firebasestorage.googleapis.com/v0/b/irmao-de-sangue.appspot.com/o/doe_sangue.jpg?alt=media&token=e68f85e9-a159-476b-9c53-4d987ba0690d'});
   }
 
   Future<void> atualizarQuantidadeSangueEmpresa() async {
@@ -154,7 +154,7 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                     children: <Widget>[
                       Container(
                         width: 370,
-                        height: 500,
+                        height: 550,
                         child: Card(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.0),
@@ -181,14 +181,14 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                                       width: 160.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 20.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Nome:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -200,14 +200,14 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                                       width: 120.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 20.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Cidade:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -223,14 +223,14 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                                       width: 160.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 20.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Empresa:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -242,14 +242,14 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                                       width: 120.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 20.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Data:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -265,14 +265,14 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                                       width: 160.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 18.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Posto:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -284,14 +284,14 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                                       width: 120.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 20.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Volume:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 15.0),
                                         ),
@@ -309,14 +309,14 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                                     style: TextStyle(
                                       color: Colors.redAccent,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 15.0,
+                                      fontSize: 17.0,
                                       decoration: TextDecoration.none,
                                     ),
                                   )),
                               Container(
                                 child: IconButton(
                                     padding: new EdgeInsets.only(top: 15),
-                                    icon: Icon(Icons.photo_camera, size: 50.0),
+                                    icon: isPressedCamera ? Icon(Icons.check_circle,color:Colors.green , size: 50.0) : Icon(Icons.photo_camera, size: 50.0) ,
                                     onPressed: () {
                                       if (!isEnabled) {
                                         salvarProtocolo();
@@ -332,7 +332,7 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                               Container(
                                   width: 330,
                                   height: 50,
-                                  margin: EdgeInsets.only(top: 35),
+                                  margin: EdgeInsets.only(top: 28),
                                   child: Card(
                                       shape: RoundedRectangleBorder(
                                         borderRadius:
@@ -345,13 +345,13 @@ class _ConfirmacaoAgendamentoState extends State<ConfirmacaoAgendamento> {
                                               Scaffold.of(context)
                                                   .showSnackBar(SnackBar(
                                                 content: Text(
-                                                    'Aguarde processamento do protocolo!'),
+                                                    'Aguarde processamento do protocolo!',style: TextStyle(  fontSize: 17.0, ),),
                                               ));
                                             } else if (!isEnabled) {
                                               Scaffold.of(context)
                                                   .showSnackBar(SnackBar(
                                                 content: Text(
-                                                    'Faça o upload do protocolo através câmera acima!'),
+                                                    'Faça o upload do protocolo através câmera acima!',style: TextStyle(  fontSize: 16.0, ),),
                                               ));
                                             } else if (isEnabled) {
                                               removeDataFromPreference();

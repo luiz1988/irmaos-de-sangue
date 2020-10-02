@@ -102,12 +102,15 @@ class _LoginFormState extends State<LoginForm> {
                       child: Image.asset('assets/logo.png'),
                     ),
                     TextFormField(
+                      style:TextStyle(  fontSize: 20.0, ),
                       keyboardType: TextInputType.emailAddress,
                       controller: _emailController,
                       decoration: InputDecoration(
                         contentPadding:
                             EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
                         labelText: 'Email',
+                         labelStyle: TextStyle(
+                          fontSize: 20),
                       ),
                       autovalidate: true,
                       autocorrect: false,
@@ -120,6 +123,8 @@ class _LoginFormState extends State<LoginForm> {
                       decoration: InputDecoration(
                         suffix: showPassword(),
                         labelText: 'Password',
+                         labelStyle: TextStyle(
+                          fontSize: 20),
                         contentPadding:
                             EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
                       ),

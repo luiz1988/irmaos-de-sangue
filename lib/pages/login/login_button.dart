@@ -21,7 +21,7 @@ class LoginButton extends StatelessWidget {
             height: 42.0,
             color: Colors.redAccent,
             onPressed: _onPressed,
-            child: Text('Log in', style: TextStyle(color: Colors.white, fontSize: 15)),
+            child: Text('Log in', style: TextStyle(color: Colors.white, fontSize: 20)),
           ),
         ),
       ),

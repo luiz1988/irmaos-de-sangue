@@ -167,7 +167,7 @@ class _ConfirmacaoPageState extends State<ConfirmacaoPage> {
                     children: <Widget>[
                       Container(
                         width: 370,
-                        height: 460,
+                        height: 500,
                         child: Card(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.0),
@@ -194,14 +194,14 @@ class _ConfirmacaoPageState extends State<ConfirmacaoPage> {
                                       width: 160.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 21.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Nome:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -213,14 +213,14 @@ class _ConfirmacaoPageState extends State<ConfirmacaoPage> {
                                       width: 120.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 21.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Cidade:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -236,14 +236,14 @@ class _ConfirmacaoPageState extends State<ConfirmacaoPage> {
                                       width: 160.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 21.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Empresa:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -255,14 +255,14 @@ class _ConfirmacaoPageState extends State<ConfirmacaoPage> {
                                       width: 120.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 21.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Data:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -278,14 +278,14 @@ class _ConfirmacaoPageState extends State<ConfirmacaoPage> {
                                       width: 180.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 19.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Posto:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),
@@ -297,14 +297,14 @@ class _ConfirmacaoPageState extends State<ConfirmacaoPage> {
                                       width: 100.0,
                                       child: TextField(
                                         style: new TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 21.0,
                                             height: 2.0,
                                             color: Colors.grey),
                                         decoration: InputDecoration(
                                           labelText: 'Tipo:',
                                           labelStyle: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 18),
+                                              fontSize: 24),
                                           contentPadding:
                                               const EdgeInsets.only(top: 20.0),
                                         ),

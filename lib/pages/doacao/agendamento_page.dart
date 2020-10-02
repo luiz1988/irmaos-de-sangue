@@ -77,9 +77,9 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
 
   void listarCidades() {
     List<GenericObject> listaCidades = new List<GenericObject>();
-    listaCidades.add(new GenericObject('1', 'Araraquara-SP'));
-    listaCidades.add(new GenericObject('2', 'São Carlos-SP'));
-    listaCidades.add(new GenericObject('3', 'Matão-SP'));
+    listaCidades.add(new GenericObject('1', 'Araraquara'));
+    listaCidades.add(new GenericObject('2', 'São Carlos'));
+    listaCidades.add(new GenericObject('3', 'Matão'));
     setState(() {
       cidades = listaCidades;
     });
@@ -155,20 +155,23 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
                             child: DropdownButtonFormField<String>(
                               value: selectedCity,
                               hint: Text(
-                                'Informe o local',
+                                'Informe o local',style: TextStyle(
+                          
+                          fontSize: 20.0),
+                      textAlign: TextAlign.center
                               ),
                               onChanged: (value) =>
                                   setState(() => selectedCity = value),
                               validator: (value) =>
                                   value == null ? 'Informe o local!' : null,
                               items: [
-                                'Araraquara-SP',
-                                'São Carlos-SP',
-                                'Matão-SP'
+                                'Araraquara',
+                                'São Carlos',
+                                'Matão'
                               ].map<DropdownMenuItem<String>>((String value) {
                                 return DropdownMenuItem<String>(
                                   value: value,
-                                  child: Text(value),
+                                  child: Text(value,style: TextStyle(  fontSize: 20.0, ),),
                                 );
                               }).toList(),
                             ),
@@ -179,7 +182,9 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
                             child: DropdownButtonFormField<String>(
                               value: selectedPostoAtendimento,
                               hint: Text(
-                                'Informe o posto ',
+                                'Informe o posto ',style: TextStyle(
+                          
+                          fontSize: 20.0)
                               ),
                               onChanged: (value) => setState(
                                   () => selectedPostoAtendimento = value),
@@ -192,7 +197,7 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
                               ].map<DropdownMenuItem<String>>((String value) {
                                 return DropdownMenuItem<String>(
                                   value: value,
-                                  child: Text(value),
+                                  child: Text(value,style: TextStyle(  fontSize: 20.0, ),),
                                 );
                               }).toList(),
                             ),
@@ -209,7 +214,7 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
                                         // suffixIcon:
                                         //     const Icon(Icons.calendar_today),
                                         hintText: 'Selecione uma data',
-                                        hintStyle: TextStyle(fontSize: 17.0),
+                                        hintStyle: TextStyle(fontSize: 20.0),
                                         fillColor: Colors.red),
                                     controller: _dateController,
                                     validator: (value) {

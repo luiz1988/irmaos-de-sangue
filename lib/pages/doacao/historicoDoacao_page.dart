@@ -101,7 +101,7 @@ class _HistoricoDoacaopageState extends State<HistoricoDoacaopage> {
                           data["data_doacao"],
                           style: TextStyle(fontSize: 18.0),
                         ),
-                        Text(
+                        Text("Hemonúcleo"+ " - "+
                           data["cidade"],
                           style: TextStyle(fontSize: 18.0),
                         ),

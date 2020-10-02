@@ -627,7 +627,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 18.0)),
+                                                  fontSize: 21.0)),
                                         )))
                                 : Card(
                                     elevation: 10,
@@ -648,7 +648,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                                     : snapshot.data["status"] ==
                                                             3
                                                         ? 'Faça a efetivação da sua doação!'
-                                                        : 'Após 90 dias faça seu próximo agendamento!'),
+                                                        : 'Após 90 dias faça seu próximo agendamento!' ,style: TextStyle(  fontSize: 17.0, ),),
                                           ));
                                         },
                                         child: Center(
@@ -657,7 +657,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 18.0)),
+                                                  fontSize: 21.0)),
                                         ))),
                           ),
                           Container(
@@ -687,7 +687,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 18.0)),
+                                                  fontSize: 20.0)),
                                         )))
                                 : Card(
                                     elevation: 10,
@@ -708,7 +708,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                                     : snapshot.data["status"] ==
                                                             1
                                                         ? 'Verifique se você está apto a doar sangue!'
-                                                        : 'Após 90 dias faça seu próximo agendamento!'),
+                                                        : 'Após 90 dias faça seu próximo agendamento!',style: TextStyle(  fontSize: 17.0, ),),
                                           ));
                                         },
                                         child: Center(
@@ -717,7 +717,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 18.0)),
+                                                  fontSize: 20.0)),
                                         ))),
                           ),
                           Container(
@@ -747,7 +747,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 18.0)),
+                                                  fontSize: 20.0)),
                                         )))
                                 : Card(
                                     elevation: 10,
@@ -768,7 +768,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                                     : snapshot.data["status"] ==
                                                             1
                                                         ? 'Verifique se você está apto a doar sangue!'
-                                                        : 'Após 90 dias faça seu próximo agendamento!'),
+                                                        : 'Após 90 dias faça seu próximo agendamento!',style: TextStyle(  fontSize: 17.0, ),),
                                           ));
                                         },
                                         child: Center(
@@ -777,7 +777,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 18.0)),
+                                                  fontSize: 20.0)),
                                         ))),
                           ),
                         ]),
@@ -803,7 +803,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                         Scaffold.of(context)
                                             .showSnackBar(SnackBar(
                                           content: Text(
-                                              'No momento você não possui nenhuma doação!'),
+                                              'No momento você não possui nenhuma doação!',style: TextStyle(  fontSize: 17.0, ),),
                                         ));
                                       }
                                     },
@@ -813,7 +813,7 @@ class _DoacaoPageState extends State<DoacaoPage> {
                                           style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
-                                              fontSize: 20.0)),
+                                              fontSize: 25.0)),
                                     )))),
                       ],
                     ),
